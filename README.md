@@ -1,39 +1,46 @@
-# Hi 👋 I'm Pasupuleti Charan Kumar
+<h1 align="center">Hi 👋, I'm Pasupuleti Charan Kumar</h1>
 
-AI/ML Engineer | LLMs • RAG • LangChain • GenAI
+<h3 align="center">AI/ML Engineer | LLMs | RAG | Generative AI</h3>
 
-🎓 B.Tech CSE, Kalasalingam University
+<p align="center">
+Research Intern @ ISH <br>
+Former Research Intern @ NIT Surathkal
+</p>
 
-🔬 Research Intern @ ISH
-🔬 Former Research Intern @ NIT Surathkal
+---
 
-## Skills
+## 🚀 About Me
 
-- Python
-- Machine Learning
-- Deep Learning
-- TensorFlow
-- PyTorch
-- LangChain
-- LangGraph
-- Hugging Face
-- FastAPI
-- Docker
+- 🎓 B.Tech CSE, Kalasalingam University
+- 🤖 Interested in AI, ML, Deep Learning and LLMs
+- 🌱 Building AI Agents and RAG Systems
+- 📚 Published IEEE Research Paper
+- 🔬 Research Intern at ISH
 
-## Featured Projects
+---
 
-🚀 AI Meeting Assistant
+## 🛠️ Tech Stack
 
-🚀 AI Surveillance Monitoring System
+Python • PyTorch • TensorFlow • LangChain
 
-🚀 Ruby AI Voice Assistant
+FastAPI • React • Docker • Git
 
-🚀 AI NewsReel Generator
+SQL • Linux • GCP
 
-🚀 Energy Prediction Model
+---
 
-## Contact
+## 🔥 Featured Projects
 
-📧 pasupuleticharankumar16@gmail.com
+- AI Meeting Assistant
+- Ruby AI Voice Assistant
+- AI Surveillance Monitoring System
+- AI NewsReel Generator
+- Energy Prediction Model
 
-🔗 LinkedIn: linkedin.com/in/pasupuleticharankumar1611
+---
+
+## 📫 Connect With Me
+
+LinkedIn: www.linkedin.com/in/pasupuleticharankumar1611
+
+Email: pasupuleticharankumar16@gmail.com
