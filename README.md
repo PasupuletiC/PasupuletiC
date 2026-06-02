@@ -1,16 +1,39 @@
-## Hi there 👋
+# Hi 👋 I'm Pasupuleti Charan Kumar
 
-<!--
-**PasupuletiC/PasupuletiC** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AI/ML Engineer | LLMs • RAG • LangChain • GenAI
 
-Here are some ideas to get you started:
+🎓 B.Tech CSE, Kalasalingam University
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔬 Research Intern @ ISH
+🔬 Former Research Intern @ NIT Surathkal
+
+## Skills
+
+- Python
+- Machine Learning
+- Deep Learning
+- TensorFlow
+- PyTorch
+- LangChain
+- LangGraph
+- Hugging Face
+- FastAPI
+- Docker
+
+## Featured Projects
+
+🚀 AI Meeting Assistant
+
+🚀 AI Surveillance Monitoring System
+
+🚀 Ruby AI Voice Assistant
+
+🚀 AI NewsReel Generator
+
+🚀 Energy Prediction Model
+
+## Contact
+
+📧 pasupuleticharankumar16@gmail.com
+
+🔗 LinkedIn: linkedin.com/in/pasupuleticharankumar1611
