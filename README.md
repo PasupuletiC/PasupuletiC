@@ -1,107 +1,91 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Connecting knowledge to action." width="100%" />
+<img src="assets/banner.svg" alt="Terminal: Pasupuleti Charan Kumar, AI / ML Engineer. Agentic AI, RAG systems, and computer vision. Open to opportunities." width="100%" />
 
-**RAG systems · AI agents · Computer vision**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-CONNECT-a5b4fc?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=171927)](https://www.linkedin.com/in/pasupuleticharankumar1611)
+[![Email](https://img.shields.io/badge/Email-SAY_HELLO-67e8f9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=171927)](mailto:pasupuleticharankumar16@gmail.com)
+[![Repositories](https://img.shields.io/badge/GitHub-EXPLORE-f0abfc?style=for-the-badge&logo=github&logoColor=white&labelColor=171927)](https://github.com/PasupuletiC?tab=repositories)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_connect-142536?style=flat-square&logo=linkedin&logoColor=64e1c2)](https://www.linkedin.com/in/pasupuleticharankumar1611)
-[![Email](https://img.shields.io/badge/Email-Say_hello-142536?style=flat-square&logo=gmail&logoColor=64e1c2)](mailto:pasupuleticharankumar16@gmail.com)
-![Available for AI and ML roles](https://img.shields.io/badge/Open_to_work-AI_%2F_ML_roles-142536?style=flat-square&labelColor=166653)
-
-[Selected work](#selected-work) · [Toolkit](#toolkit) · [Research](#research) · [Connect](#connect)
+[About](#-about) · [Projects](#-projects) · [Stack](#-stack) · [Activity](#-activity)
 
 </div>
 
-## A little about me
+## ~/ about
 
-I'm **Charan**, an AI developer building applications that retrieve useful knowledge, coordinate agents, and interpret visual data. My focus is on practical engineering: reliable model fallbacks, affordable infrastructure, and interfaces people can use.
+I build **AI applications that retrieve, reason, and act** — from incident-handling agents to voice assistants and vision pipelines.
 
-Currently an **AI Developer Intern at Brollysolutions**. B.Tech in Computer Science from **Kalasalingam Academy of Research and Education (2026)**, and an **IEEE INDICON 2025 author**.
+```yaml
+current:   AI Developer Intern @ Brollysolutions
+education: B.Tech CSE · Kalasalingam · 2026
+research:  IEEE INDICON 2025 · Energy prediction
+learning:  LLM evaluation, agent reliability, deployment
+looking:   AI/ML Engineer & AI Developer opportunities
+```
 
-## Selected work
+## ~/ dashboard
 
-### 01 / AI Operations Center
+<img src="assets/github-dashboard.svg" alt="GitHub public repository, star, follower, and fork counts, plus primary repository languages. Refreshed daily using the GitHub API." width="100%" />
 
-**Coordinating specialist agents around a shared knowledge base.**
+## ~/ projects
 
-A LangGraph / LangChain system with Qdrant retrieval and automatic Groq–Gemini provider failover, deployed on AWS.
+<a href="https://github.com/PasupuletiC/AI-Operations-Center"><img src="assets/project-operations.svg" alt="AI Operations Center — support email triage and incident analysis with LangGraph, FastAPI, Next.js, and Qdrant. Open repository." width="100%" /></a>
 
-`LangGraph` `LangChain` `Qdrant` `Groq` `Gemini` `AWS`
+**Inside:** Email routing, root-cause analysis, knowledge retrieval, and model routing across Groq, Gemini, and Ollama.
 
-[Explore the repository →](https://github.com/PasupuletiC/AI-Operations-Center)
+<a href="https://github.com/PasupuletiC/rag-voice-assistant"><img src="assets/project-ruby.svg" alt="Ruby Voice Assistant — document-grounded conversations using Python, Flask, Groq, and FAISS. Open repository." width="100%" /></a>
 
-<details>
-<summary>Explore the architecture</summary>
-<br />
-<img src="assets/arch-operations-center.svg" alt="User query flows through routing, specialist agents, Qdrant retrieval, and a Groq / Gemini model layer." width="100%" />
-</details>
+**Inside:** Persistent memory, document retrieval, OCR, web search, and English, Hindi, Tamil, and Telugu voice modes.
 
-### 02 / AI Surveillance Monitoring
+<a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System"><img src="assets/project-vision.svg" alt="AI Surveillance — YOLOv8, OpenCV, and retrieval-augmented incident reporting. Open repository." width="100%" /></a>
 
-**Turning video detections into readable incident reports.**
+**Focus:** Connecting visual detections with context for incident reporting.
 
-A computer vision pipeline combining YOLOv8 detection with retrieval-augmented reporting to connect observed events with relevant context.
-
-`YOLOv8` `OpenCV` `RAG` `FastAPI`
-
-[Explore the repository →](https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System)
+<a href="https://github.com/PasupuletiC/AI-NewsReel-Generator"><img src="assets/project-news.svg" alt="AI NewsReel Generator — automated AI-driven news reel generation. Open repository." width="100%" /></a>
 
 <details>
-<summary>Explore the architecture</summary>
+<summary><strong>Under the hood / architecture diagrams</strong></summary>
 <br />
-<img src="assets/arch-surveillance.svg" alt="Camera feed flows through detection, event logic, retrieval-augmented reporting, and incident reports." width="100%" />
+<img src="assets/arch-operations-center.svg" alt="AI Operations Center conceptual agent and retrieval flow" width="100%" />
+<img src="assets/arch-ruby.svg" alt="Ruby conceptual voice and retrieval flow" width="100%" />
+<img src="assets/arch-surveillance.svg" alt="Surveillance conceptual detection and reporting flow" width="100%" />
 </details>
 
-### 03 / Ruby — RAG Voice Assistant
+## ~/ stack
 
-**A voice interface grounded in a knowledge base.**
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,react,nextjs,docker,aws,gcp,postgres,git&perline=6&theme=dark" alt="Python, PyTorch, TensorFlow, FastAPI, Flask, React, Next.js, Docker, AWS, Google Cloud, PostgreSQL, Git" />
+</p>
 
-Combines speech input, document retrieval, and LLaMA-3 inference through Groq to support knowledge-grounded voice conversations.
+<p align="center">
+<img src="https://img.shields.io/badge/LangGraph-a5b4fc?style=flat-square&labelColor=171927" alt="LangGraph" />
+<img src="https://img.shields.io/badge/LangChain-a5b4fc?style=flat-square" alt="LangChain" />
+<img src="https://img.shields.io/badge/Qdrant-67e8f9?style=flat-square" alt="Qdrant" />
+<img src="https://img.shields.io/badge/Groq-67e8f9?style=flat-square" alt="Groq" />
+<img src="https://img.shields.io/badge/YOLOv8-f0abfc?style=flat-square" alt="YOLOv8" />
+<img src="https://img.shields.io/badge/OpenCV-f0abfc?style=flat-square" alt="OpenCV" />
+</p>
 
-`LLaMA-3` `Groq` `RAG` `Speech`
+## ~/ research
 
-[Explore the repository →](https://github.com/PasupuletiC/rag-voice-assistant)
+**IEEE INDICON 2025 — Energy prediction**
 
-<details>
-<summary>Explore the architecture</summary>
-<br />
-<img src="assets/arch-ruby.svg" alt="Voice input flows through transcription, knowledge retrieval, LLaMA-3 on Groq, and spoken output." width="100%" />
-</details>
+Random Forest modeling for energy prediction, alongside my ongoing interest in applied machine learning and model evaluation.
 
-### Also building
-
-**[AI NewsReel Generator →](https://github.com/PasupuletiC/AI-NewsReel-Generator)** — Automated AI-driven news reel generation.
-
-## Toolkit
-
-| Area | Technologies |
-| :--- | :--- |
-| AI & retrieval | LangChain, LangGraph, Qdrant, Groq, Gemini, LLaMA-3 |
-| Machine learning & vision | Python, PyTorch, TensorFlow, YOLOv8, OpenCV |
-| Applications | FastAPI, React, Next.js, PostgreSQL |
-| Infrastructure | Docker, AWS, Google Cloud, Git, Linux |
-
-## Research
-
-**Energy prediction · IEEE INDICON 2025**
-
-Research on energy prediction using Random Forest models. This work informs my interest in evaluating models alongside the applications built around them.
-
-## What I'm exploring
-
-- Evaluating retrieval quality and LLM responses.
-- Building more reliable agent workflows and model fallbacks.
-- Deploying useful AI applications within practical cost constraints.
-
-## On GitHub
+## ~/ activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated snake tracing my GitHub contribution grid" width="100%" />
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake-dark.svg" />
+<img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history, refreshed daily" width="100%" />
 </picture>
 
-## Connect
+---
 
-I'm open to **AI/ML Engineer** and **AI Developer** opportunities at the entry level. If you're working on RAG, agent systems, or computer vision, I'd love to connect.
+<div align="center">
 
-**[Message me on LinkedIn →](https://www.linkedin.com/in/pasupuleticharankumar1611)** · **[Send an email →](mailto:pasupuleticharankumar16@gmail.com)**
+**Have an AI problem worth building for?**
+
+[Let's connect on LinkedIn](https://www.linkedin.com/in/pasupuleticharankumar1611) · [Send me an email](mailto:pasupuleticharankumar16@gmail.com)
+
+<sub>Building, learning, and shipping — one commit at a time.</sub>
+
+</div>
