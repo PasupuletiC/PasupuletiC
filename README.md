@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Terminal: Pasupuleti Charan Kumar, AI / ML Engineer. Agentic AI, RAG systems, and computer vision. Open to opportunities." width="100%" />
+<picture><source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" /><img src="assets/banner.svg" alt="Terminal: Pasupuleti Charan Kumar, AI / ML Engineer. Agentic AI, RAG systems, and computer vision. Open to opportunities." width="100%" /></picture>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-CONNECT-a5b4fc?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=171927)](https://www.linkedin.com/in/pasupuleticharankumar1611)
 [![Email](https://img.shields.io/badge/Email-SAY_HELLO-67e8f9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=171927)](mailto:pasupuleticharankumar16@gmail.com)
@@ -28,19 +28,19 @@ looking:   AI/ML Engineer & AI Developer opportunities
 
 ## ~/ projects
 
-<a href="https://github.com/PasupuletiC/AI-Operations-Center"><img src="assets/project-operations.svg" alt="AI Operations Center — support email triage and incident analysis with LangGraph, FastAPI, Next.js, and Qdrant. Open repository." width="100%" /></a>
+<a href="https://github.com/PasupuletiC/AI-Operations-Center"><picture><source media="(max-width: 600px)" srcset="assets/project-operations-mobile.svg" /><img src="assets/project-operations.svg" alt="AI Operations Center — support email triage and incident analysis with LangGraph, FastAPI, Next.js, and Qdrant. Open repository." width="100%" /></picture></a>
 
 **Inside:** Email routing, root-cause analysis, knowledge retrieval, and model routing across Groq, Gemini, and Ollama.
 
-<a href="https://github.com/PasupuletiC/rag-voice-assistant"><img src="assets/project-ruby.svg" alt="Ruby Voice Assistant — document-grounded conversations using Python, Flask, Groq, and FAISS. Open repository." width="100%" /></a>
+<a href="https://github.com/PasupuletiC/rag-voice-assistant"><picture><source media="(max-width: 600px)" srcset="assets/project-ruby-mobile.svg" /><img src="assets/project-ruby.svg" alt="Ruby Voice Assistant — document-grounded conversations using Python, Flask, Groq, and FAISS. Open repository." width="100%" /></picture></a>
 
 **Inside:** Persistent memory, document retrieval, OCR, web search, and English, Hindi, Tamil, and Telugu voice modes.
 
-<a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System"><img src="assets/project-vision.svg" alt="AI Surveillance — YOLOv8, OpenCV, and retrieval-augmented incident reporting. Open repository." width="100%" /></a>
+<a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System"><picture><source media="(max-width: 600px)" srcset="assets/project-vision-mobile.svg" /><img src="assets/project-vision.svg" alt="AI Surveillance — YOLOv8, OpenCV, and retrieval-augmented incident reporting. Open repository." width="100%" /></picture></a>
 
 **Focus:** Connecting visual detections with context for incident reporting.
 
-<a href="https://github.com/PasupuletiC/AI-NewsReel-Generator"><img src="assets/project-news.svg" alt="AI NewsReel Generator — automated AI-driven news reel generation. Open repository." width="100%" /></a>
+<a href="https://github.com/PasupuletiC/AI-NewsReel-Generator"><picture><source media="(max-width: 600px)" srcset="assets/project-news-mobile.svg" /><img src="assets/project-news.svg" alt="AI NewsReel Generator — automated AI-driven news reel generation. Open repository." width="100%" /></picture></a>
 
 <details>
 <summary><strong>Under the hood / architecture diagrams</strong></summary>
