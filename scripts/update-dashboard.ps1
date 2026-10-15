@@ -23,12 +23,13 @@ $svg = @'
 <circle cx="27" cy="27" r="5" fill="#f87171"/><circle cx="45" cy="27" r="5" fill="#fbbf24"/><circle cx="63" cy="27" r="5" fill="#4ade80"/>
 <text x="88" y="33" fill="#475569" font-size="15">github / public metrics</text>
 <path d="M1 52H999" stroke="#dce3ed"/>
+<circle r="3" fill="#4338ca"><animateMotion path="M28 52H972" dur="7s" repeatCount="indefinite"/></circle>
 '@
 $labels = @('PUBLIC REPOS', 'STARS EARNED', 'FOLLOWERS', 'FORKS EARNED')
 $values = @($profile.public_repos, $stars, $profile.followers, $forks)
 for ($i = 0; $i -lt 4; $i++) {
     $x = 34 + $i * 246
-    $svg += "<text x='$x' y='118' fill='#0f172a' font-size='42' font-weight='700'>$($values[$i])</text><text x='$x' y='150' fill='#4338ca' font-size='15'>$($labels[$i])</text>"
+    $svg += "<text x='$x' y='118' fill='#0f172a' font-size='42' font-weight='700'>$($values[$i])</text><text x='$x' y='150' fill='#4338ca' font-size='15'>$($labels[$i])</text><path d='M$x 164h170' stroke='#dce3ed'/><circle cx='$x' cy='164' r='2.5' fill='#4338ca'><animate attributeName='cx' values='$x;$($x+170);$x' dur='$($i+4)s' repeatCount='indefinite'/></circle>"
 }
 $svg += "<path d='M34 177H966' stroke='#dce3ed'/><text x='34' y='210' fill='#475569' font-size='16'>Primary languages / original public repositories</text>"
 $colors = @('#4338ca', '#0f766e', '#be185d', '#9a580b', '#0f766e')

@@ -68,12 +68,25 @@ I build **AI applications that retrieve knowledge, coordinate agents, and interp
 
 ## Engineering stack
 
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/stack-dark-mobile.svg" />
+  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/stack-light-mobile.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
+  <img src="./assets/stack-dark.svg" alt="Animated engineering stack: AI and retrieval, machine learning and vision, applications, and infrastructure. Text version below." width="100%" />
+</picture>
+
+<details>
+<summary>Engineering stack — text version</summary>
+
 | Area | Technologies |
 | :--- | :--- |
 | **AI & retrieval** | LangGraph · LangChain · Qdrant · FAISS · Groq · Gemini |
 | **Machine learning & vision** | Python · PyTorch · TensorFlow · YOLOv8 · OpenCV |
 | **Application development** | FastAPI · Flask · React · Next.js · PostgreSQL |
 | **Infrastructure & tools** | Docker · AWS · Google Cloud · Git · Linux |
+
+</details>
 
 **Current learning:** LLM evaluation, agent reliability, and production deployment.
 
@@ -91,15 +104,10 @@ I build **AI applications that retrieve knowledge, coordinate agents, and interp
   <img src="./assets/activity-dark.svg" alt="GitHub public repository, star, follower, and fork counts, plus primary repository languages. Refreshed daily." width="100%" />
 </picture>
 
-<details>
-<summary>Contribution animation</summary>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history" width="100%" />
 </picture>
-
-</details>
 
 ## Connect
 
