@@ -4,9 +4,9 @@
 </picture>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-Connect-6750db?style=flat-square&logo=linkedin&logoColor=6750db&labelColor=eeebfa" alt="Connect on LinkedIn" /></a>
-<a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-008b9c?style=flat-square&logo=gmail&logoColor=008b9c&labelColor=eeebfa" alt="Send an email" /></a>
-<a href="https://github.com/PasupuletiC?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore-b94f89?style=flat-square&logo=github&logoColor=b94f89&labelColor=eeebfa" alt="Explore repositories" /></a>
+<a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-Connect-4338ca?style=flat-square&logo=linkedin&logoColor=4338ca&labelColor=f1f5f9" alt="Connect on LinkedIn" /></a>
+<a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-0f766e?style=flat-square&logo=gmail&logoColor=0f766e&labelColor=f1f5f9" alt="Send an email" /></a>
+<a href="https://github.com/PasupuletiC?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore-be185d?style=flat-square&logo=github&logoColor=be185d&labelColor=f1f5f9" alt="Explore repositories" /></a>
 </p>
 
 I’m **Charan**, an AI developer working on **agent systems, retrieval-augmented generation, and computer vision**. I care about useful applications, reliable model behavior, and practical deployment.
