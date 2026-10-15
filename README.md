@@ -1,12 +1,12 @@
 <picture>
-<source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" />
-<img src="assets/banner.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Applied AI. Thoughtful engineering." width="100%" />
+<source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/banner-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/banner-still.svg" /><source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" />
+<img src="assets/banner.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Animated agentic AI, RAG, and computer vision profile." width="100%" />
 </picture>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-Connect-ac432c?style=flat-square&logo=linkedin&logoColor=ac432c&labelColor=f0ece3" alt="Connect on LinkedIn" /></a>
-<a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-34685f?style=flat-square&logo=gmail&logoColor=34685f&labelColor=f0ece3" alt="Send an email" /></a>
-<a href="https://github.com/PasupuletiC?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore-745382?style=flat-square&logo=github&logoColor=745382&labelColor=f0ece3" alt="Explore repositories" /></a>
+<a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-Connect-6750db?style=flat-square&logo=linkedin&logoColor=6750db&labelColor=eeebfa" alt="Connect on LinkedIn" /></a>
+<a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-008b9c?style=flat-square&logo=gmail&logoColor=008b9c&labelColor=eeebfa" alt="Send an email" /></a>
+<a href="https://github.com/PasupuletiC?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore-b94f89?style=flat-square&logo=github&logoColor=b94f89&labelColor=eeebfa" alt="Explore repositories" /></a>
 </p>
 
 I’m **Charan**, an AI developer working on **agent systems, retrieval-augmented generation, and computer vision**. I care about useful applications, reliable model behavior, and practical deployment.
@@ -18,19 +18,19 @@ I’m **Charan**, an AI developer working on **agent systems, retrieval-augmente
 ## Selected work
 
 <a href="https://github.com/PasupuletiC/AI-Operations-Center">
-<picture><source media="(max-width: 600px)" srcset="assets/project-operations-mobile.svg" /><img src="assets/project-operations.svg" alt="AI Operations Center: support email triage and incident analysis. Open repository." width="100%" /></picture>
+<picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/project-operations-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/project-operations-still.svg" /><source media="(max-width: 600px)" srcset="assets/project-operations-mobile.svg" /><img src="assets/project-operations.svg" alt="AI Operations Center: support email triage and incident analysis. Open repository." width="100%" /></picture>
 </a>
 
 <a href="https://github.com/PasupuletiC/rag-voice-assistant">
-<picture><source media="(max-width: 600px)" srcset="assets/project-ruby-mobile.svg" /><img src="assets/project-ruby.svg" alt="Ruby Voice Assistant: document retrieval, persistent memory, and multilingual voice. Open repository." width="100%" /></picture>
+<picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/project-ruby-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/project-ruby-still.svg" /><source media="(max-width: 600px)" srcset="assets/project-ruby-mobile.svg" /><img src="assets/project-ruby.svg" alt="Ruby Voice Assistant: document retrieval, persistent memory, and multilingual voice. Open repository." width="100%" /></picture>
 </a>
 
 <a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System">
-<picture><source media="(max-width: 600px)" srcset="assets/project-vision-mobile.svg" /><img src="assets/project-vision.svg" alt="AI Surveillance: visual detection and incident reporting. Open repository." width="100%" /></picture>
+<picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/project-vision-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/project-vision-still.svg" /><source media="(max-width: 600px)" srcset="assets/project-vision-mobile.svg" /><img src="assets/project-vision.svg" alt="AI Surveillance: visual detection and incident reporting. Open repository." width="100%" /></picture>
 </a>
 
 <a href="https://github.com/PasupuletiC/AI-NewsReel-Generator">
-<picture><source media="(max-width: 600px)" srcset="assets/project-news-mobile.svg" /><img src="assets/project-news.svg" alt="AI NewsReel Generator: AI-driven news reel generation. Open repository." width="100%" /></picture>
+<picture><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/project-news-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/project-news-still.svg" /><source media="(max-width: 600px)" srcset="assets/project-news-mobile.svg" /><img src="assets/project-news.svg" alt="AI NewsReel Generator: AI-driven news reel generation. Open repository." width="100%" /></picture>
 </a>
 
 <details>
