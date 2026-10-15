@@ -19,7 +19,7 @@ $svg = @'
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img">
 <title>Live GitHub dashboard for PasupuletiC</title>
 <rect x="1" y="1" width="998" height="328" rx="16" fill="#ffffff" stroke="#dce3ed"/>
-<g font-family="Arial, Helvetica, sans-serif">
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
 <circle cx="27" cy="27" r="5" fill="#f87171"/><circle cx="45" cy="27" r="5" fill="#fbbf24"/><circle cx="63" cy="27" r="5" fill="#4ade80"/>
 <text x="88" y="33" fill="#475569" font-size="15">github / public metrics</text>
 <path d="M1 52H999" stroke="#dce3ed"/>
@@ -41,7 +41,27 @@ foreach ($language in $languages) {
     $i++
 }
 $svg += "<text x='34' y='301' fill='#526075' font-size='13'>Updated $updated UTC / GitHub API / stars and forks exclude forked repos</text></g></svg>"
-$destination = Join-Path $PSScriptRoot '../assets/github-dashboard.svg'
-[System.IO.File]::WriteAllText($destination, $svg + "`n", [System.Text.UTF8Encoding]::new($false))
-[xml]$validated = $svg
+$palettes = @{
+    dark = @{
+        '#ffffff' = '#0b1425'; '#dce3ed' = '#2b405b'; '#0f172a' = '#f1f5fb'
+        '#475569' = '#a1b1c6'; '#526075' = '#a1b1c6'; '#4338ca' = '#5edcf0'
+        '#0f766e' = '#65d6b0'; '#be185d' = '#aa91ff'; '#9a580b' = '#e8b35a'
+    }
+    light = @{
+        '#ffffff' = '#f8fbff'; '#dce3ed' = '#c4d2e3'; '#0f172a' = '#14243c'
+        '#475569' = '#52657b'; '#526075' = '#52657b'; '#4338ca' = '#075f91'
+        '#0f766e' = '#087959'; '#be185d' = '#6149b9'; '#9a580b' = '#895514'
+    }
+}
+foreach ($theme in @('dark', 'light')) {
+    $palette = $palettes[$theme]
+    $themed = [regex]::Replace($svg, '#[0-9a-fA-F]{6}\b', {
+        param($match)
+        if ($palette.ContainsKey($match.Value)) { $palette[$match.Value] } else { $match.Value }
+    })
+    $themed = $themed.Replace('role="img"', 'role="img" aria-label="Public GitHub repository, star, follower, and fork counts, plus primary repository languages"')
+    [xml]$validated = $themed
+    $destination = Join-Path $PSScriptRoot "../assets/activity-$theme.svg"
+    [System.IO.File]::WriteAllText($destination, $themed + "`n", [System.Text.UTF8Encoding]::new($false))
+}
 Write-Output "Dashboard refreshed: $($profile.public_repos) public repositories, $stars stars."
