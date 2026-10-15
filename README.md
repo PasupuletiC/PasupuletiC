@@ -1,6 +1,7 @@
 <picture>
-<source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/banner-mobile-still.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/banner-still.svg" /><source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" />
-<img src="assets/banner.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Animated agentic AI, RAG, and computer vision profile." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
+  <img src="./dark.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Animated terminal profile with a character portrait, RAG, agent systems, computer vision, and selected projects." width="100%" />
 </picture>
 
 <p align="center">
