@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
-<title id="title">Pasupuleti Charan Kumar — AI / ML Engineer</title><desc id="desc">Developer profile: agentic AI, retrieval systems, and computer vision. Open to AI and ML opportunities.</desc>
-<defs>
-<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset=".6" stop-color="#15132d"/><stop offset="1" stop-color="#0c2030"/></linearGradient>
-<linearGradient id="accent"><stop stop-color="#b9a2ff"/><stop offset=".5" stop-color="#8ebeff"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
-<radialGradient id="halo"><stop stop-color="#7762cf" stop-opacity=".32"/><stop offset="1" stop-color="#7762cf" stop-opacity="0"/></radialGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#adb7ef" stroke-opacity=".045"/></pattern>
-</defs>
-<rect x="1" y="1" width="598" height="418" rx="18" fill="url(#bg)" stroke="#343953"/><rect width="600" height="420" rx="18" fill="url(#grid)"/>
-<circle cx="520" cy="180" r="200" fill="url(#halo)"/>
-<circle cx="24" cy="26" r="5" fill="#fb7185"/><circle cx="42" cy="26" r="5" fill="#fbbf24"/><circle cx="60" cy="26" r="5" fill="#4ade80"/>
-<text x="85" y="32" font-family="Consolas,monospace" font-size="18" fill="#a4acc9">charan.dev / profile</text><path d="M1 52H599" stroke="#343953"/>
-<g font-family="Segoe UI,Arial,sans-serif"><text x="28" y="103" font-size="21" letter-spacing="5" fill="#b4bdd9">PASUPULETI</text><text x="24" y="169" font-size="56" font-weight="750" letter-spacing="-2" fill="url(#accent)">Charan Kumar</text><text x="28" y="218" font-size="30" font-weight="600" fill="#edf0ff">AI / ML Engineer</text>
-<text x="28" y="265" font-size="23" fill="#b5bfd7">Building intelligent systems,</text><text x="28" y="296" font-size="23" fill="#b5bfd7">from idea to deployment.</text>
-<text x="28" y="348" font-family="Consolas,monospace" font-size="21" fill="#b9c7f1">AGENTS / RAG / COMPUTER VISION</text><circle cx="33" cy="391" r="5" fill="#86efac"/><text x="48" y="398" font-size="20" fill="#a6cbbd">Open to AI / ML opportunities</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380" role="img"><title>Pasupuleti Charan Kumar — AI / ML Engineer</title><rect x="1" y="1" width="598" height="378" rx="18" fill="#f2f3ed" stroke="#d9ddd5"/><rect x="470" y="26" width="100" height="80" rx="12" fill="#3448ed"/><text x="520" y="80" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="800" fill="#f2f3ed">CK</text><g font-family="Arial,Helvetica,sans-serif"><text x="28" y="66" fill="#3448ed" font-size="22" font-weight="700" letter-spacing="3">PASUPULETI</text><text x="24" y="166" fill="#15161b" font-size="57" font-weight="800" letter-spacing="-3">Charan Kumar.</text><text x="28" y="220" fill="#30323a" font-size="30">AI / ML Engineer</text><path d="M28 254H572" stroke="#bec0bb"/><text x="28" y="298" fill="#4a4c54" font-size="23">Agentic AI / Retrieval systems</text><text x="28" y="335" fill="#4a4c54" font-size="23">Computer vision</text></g></svg>

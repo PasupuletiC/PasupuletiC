@@ -1,10 +1,10 @@
 <div align="center">
 
-<picture><source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" /><img src="assets/banner.svg" alt="Terminal: Pasupuleti Charan Kumar, AI / ML Engineer. Agentic AI, RAG systems, and computer vision. Open to opportunities." width="100%" /></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/banner-mobile.svg" /><img src="assets/banner.svg" alt="Pasupuleti Charan Kumar, AI / ML Engineer. Agentic AI, RAG systems, and computer vision. Open to opportunities." width="100%" /></picture>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-CONNECT-a5b4fc?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=171927)](https://www.linkedin.com/in/pasupuleticharankumar1611)
-[![Email](https://img.shields.io/badge/Email-SAY_HELLO-67e8f9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=171927)](mailto:pasupuleticharankumar16@gmail.com)
-[![Repositories](https://img.shields.io/badge/GitHub-EXPLORE-f0abfc?style=for-the-badge&logo=github&logoColor=white&labelColor=171927)](https://github.com/PasupuletiC?tab=repositories)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-CONNECT-a5b4fc?style=for-the-badge&logo=linkedin&logoColor=3448c9&labelColor=e8ecf5)](https://www.linkedin.com/in/pasupuleticharankumar1611)
+[![Email](https://img.shields.io/badge/Email-SAY_HELLO-67e8f9?style=for-the-badge&logo=gmail&logoColor=3448c9&labelColor=e8ecf5)](mailto:pasupuleticharankumar16@gmail.com)
+[![Repositories](https://img.shields.io/badge/GitHub-EXPLORE-f0abfc?style=for-the-badge&logo=github&logoColor=3448c9&labelColor=e8ecf5)](https://github.com/PasupuletiC?tab=repositories)
 
 [About](#-about) · [Projects](#-projects) · [Stack](#-stack) · [Activity](#-activity)
 
@@ -53,11 +53,11 @@ looking:   AI/ML Engineer & AI Developer opportunities
 ## ~/ stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,react,nextjs,docker,aws,gcp,postgres,git&perline=6&theme=dark" alt="Python, PyTorch, TensorFlow, FastAPI, Flask, React, Next.js, Docker, AWS, Google Cloud, PostgreSQL, Git" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,flask,react,nextjs,docker,aws,gcp,postgres,git&perline=6&theme=light" alt="Python, PyTorch, TensorFlow, FastAPI, Flask, React, Next.js, Docker, AWS, Google Cloud, PostgreSQL, Git" />
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/LangGraph-a5b4fc?style=flat-square&labelColor=171927" alt="LangGraph" />
+<img src="https://img.shields.io/badge/LangGraph-a5b4fc?style=flat-square&labelColor=e8ecf5" alt="LangGraph" />
 <img src="https://img.shields.io/badge/LangChain-a5b4fc?style=flat-square" alt="LangChain" />
 <img src="https://img.shields.io/badge/Qdrant-67e8f9?style=flat-square" alt="Qdrant" />
 <img src="https://img.shields.io/badge/Groq-67e8f9?style=flat-square" alt="Groq" />
@@ -74,7 +74,6 @@ Random Forest modeling for energy prediction, alongside my ongoing interest in a
 ## ~/ activity
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake-dark.svg" />
 <img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history, refreshed daily" width="100%" />
 </picture>
 
