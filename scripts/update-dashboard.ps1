@@ -23,16 +23,16 @@ $svg = @'
 <circle cx="27" cy="27" r="5" fill="#f87171"/><circle cx="45" cy="27" r="5" fill="#fbbf24"/><circle cx="63" cy="27" r="5" fill="#4ade80"/>
 <text x="88" y="33" fill="#475569" font-size="15">github / public metrics</text>
 <path d="M1 52H999" stroke="#dce3ed"/>
-<circle r="3" fill="#9f1239"><animateMotion path="M28 52H972" dur="7s" repeatCount="indefinite"/></circle>
+<circle r="3" fill="#12263f"><animateMotion path="M28 52H972" dur="7s" repeatCount="indefinite"/></circle>
 '@
 $labels = @('PUBLIC REPOS', 'STARS EARNED', 'FOLLOWERS', 'FORKS EARNED')
 $values = @($profile.public_repos, $stars, $profile.followers, $forks)
 for ($i = 0; $i -lt 4; $i++) {
     $x = 34 + $i * 246
-    $svg += "<text x='$x' y='118' fill='#0f172a' font-size='42' font-weight='700'>$($values[$i])</text><text x='$x' y='150' fill='#9f1239' font-size='15'>$($labels[$i])</text><path d='M$x 164h170' stroke='#dce3ed'/><circle cx='$x' cy='164' r='2.5' fill='#9f1239'><animate attributeName='cx' values='$x;$($x+170);$x' dur='$($i+4)s' repeatCount='indefinite'/></circle>"
+    $svg += "<text x='$x' y='118' fill='#0f172a' font-size='42' font-weight='700'>$($values[$i])</text><text x='$x' y='150' fill='#12263f' font-size='15'>$($labels[$i])</text><path d='M$x 164h170' stroke='#dce3ed'/><circle cx='$x' cy='164' r='2.5' fill='#12263f'><animate attributeName='cx' values='$x;$($x+170);$x' dur='$($i+4)s' repeatCount='indefinite'/></circle>"
 }
 $svg += "<path d='M34 177H966' stroke='#dce3ed'/><text x='34' y='210' fill='#475569' font-size='16'>Primary languages / original public repositories</text>"
-$colors = @('#9f1239', '#0f766e', '#be185d', '#9a580b', '#0f766e')
+$colors = @('#12263f', '#0f766e', '#3b82c4', '#9a580b', '#0f766e')
 $x = 34
 $i = 0
 foreach ($language in $languages) {
@@ -45,13 +45,13 @@ $svg += "<text x='34' y='301' fill='#526075' font-size='13'>Updated $updated UTC
 $palettes = @{
     dark = @{
         '#ffffff' = '#0b1425'; '#dce3ed' = '#2b405b'; '#0f172a' = '#f1f5fb'
-        '#475569' = '#a1b1c6'; '#526075' = '#a1b1c6'; '#9f1239' = '#f5b84b'
-        '#0f766e' = '#65d6b0'; '#be185d' = '#ff8fa3'; '#9a580b' = '#e8b35a'
+        '#475569' = '#a1b1c6'; '#526075' = '#a1b1c6'; '#12263f' = '#f5b84b'
+        '#0f766e' = '#65d6b0'; '#3b82c4' = '#ff8fa3'; '#9a580b' = '#e8b35a'
     }
     light = @{
         '#ffffff' = '#f8fbff'; '#dce3ed' = '#c4d2e3'; '#0f172a' = '#14243c'
-        '#475569' = '#52657b'; '#526075' = '#52657b'; '#9f1239' = '#b45309'
-        '#0f766e' = '#087959'; '#be185d' = '#be185d'; '#9a580b' = '#895514'
+        '#475569' = '#52657b'; '#526075' = '#52657b'; '#12263f' = '#1f9a73'
+        '#0f766e' = '#087959'; '#3b82c4' = '#3b82c4'; '#9a580b' = '#895514'
     }
 }
 foreach ($theme in @('dark', 'light')) {

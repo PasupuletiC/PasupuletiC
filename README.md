@@ -63,16 +63,9 @@
 
 ## GitHub activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg" />
-  <img src="./assets/activity-dark.svg" alt="GitHub public repository, star, follower, and fork counts, plus primary repository languages. Refreshed daily." width="100%" />
-</picture>
+<img src="./assets/activity-light.svg" alt="GitHub public repository, star, follower, and fork counts, plus primary repository languages. Refreshed daily." width="100%" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history" width="100%" />
-</picture>
+<img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history" width="100%" />
 
 <p align="center">
   <img src="./assets/profile/connect.svg" alt="Connect. Open to entry-level AI/ML Engineer and AI Developer opportunities, and conversations about RAG, agents and computer vision." width="100%" />
