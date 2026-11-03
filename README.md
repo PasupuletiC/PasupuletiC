@@ -1,65 +1,58 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
-  <img src="./dark.svg" alt="Charan Kumar Pasupuleti — AI / ML Engineer. Animated terminal profile with a character portrait, RAG, agent systems, computer vision, and selected projects." width="100%" />
-</picture>
-
 <p align="center">
-  <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
-  <a href="#engineering-stack">Engineering stack</a> &nbsp;·&nbsp;
-  <a href="#background">Background</a> &nbsp;·&nbsp;
-  <a href="#github-activity">Activity</a> &nbsp;·&nbsp;
-  <a href="#connect">Connect</a>
+  <img src="./assets/profile/hero.svg" alt="Hi, I'm Charan Kumar Pasupuleti, AI/ML Engineer. Generative AI, RAG, agentic AI and machine learning. I build AI applications that retrieve knowledge, coordinate agents, and interpret visual data." width="100%" />
 </p>
 
-I build **AI applications that retrieve knowledge, coordinate agents, and interpret visual data**. My focus is practical: reliable model behavior, affordable infrastructure, and clear interfaces.
+<p align="center">
+  <a href="https://github.com/PasupuletiC"><img src="https://img.shields.io/badge/GitHub-PasupuletiC-12263f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-pasupuleticharankumar1611-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Get%20in%20touch-1f9a73?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## Selected work
+<p align="center">
+  <img src="./assets/profile/strip.svg" alt="B.Tech CSE, KARE, batch 2026. AI Developer Intern at Brollysolutions. IEEE INDICON 2025 research author. Focus: RAG, agents, computer vision. Currently learning LLM evaluation and production." width="100%" />
+</p>
 
-<a href="https://github.com/PasupuletiC/AI-Operations-Center">
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/work-operations-dark-mobile.svg" />
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/work-operations-light-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-operations-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-operations-light.svg" />
-  <img src="./assets/work-operations-dark.svg" alt="AI Operations Center: support email triage, incident analysis, and knowledge retrieval. Open repository." width="100%" />
-</picture>
-</a>
+<table width="100%">
+<tr>
+<td width="48%" valign="top">
 
-<a href="https://github.com/PasupuletiC/rag-voice-assistant">
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/work-ruby-dark-mobile.svg" />
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/work-ruby-light-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-ruby-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-ruby-light.svg" />
-  <img src="./assets/work-ruby-dark.svg" alt="Ruby Voice Assistant: document-grounded conversations, memory, and multilingual voice. Open repository." width="100%" />
-</picture>
-</a>
+<img src="./assets/profile/about.svg" alt="About me: AI/ML engineer with hands-on experience in LLMs, RAG, computer vision and agent systems. Builds end-to-end AI applications. Interested in Generative AI, MLOps and real-world AI products." width="100%" />
+<br/>
+<img src="./assets/profile/techstack.svg" alt="Tech stack. Languages: Python, TypeScript, JavaScript. AI/ML: PyTorch, TensorFlow, scikit-learn. GenAI/LLM: LangChain, LangGraph, Qdrant, Gemini. Web/API: FastAPI, Flask, Next.js. Data/DB: PostgreSQL, Elasticsearch. Infra/Tools: Docker, AWS, Google Cloud, Git, Linux." width="100%" />
 
-<a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System">
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/work-vision-dark-mobile.svg" />
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/work-vision-light-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-vision-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-vision-light.svg" />
-  <img src="./assets/work-vision-dark.svg" alt="AI Surveillance: visual detection with retrieval-augmented incident reports. Open repository." width="100%" />
-</picture>
-</a>
+</td>
+<td width="52%" valign="top">
 
-<a href="https://github.com/PasupuletiC/AI-NewsReel-Generator">
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/work-news-dark-mobile.svg" />
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/work-news-light-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-news-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-news-light.svg" />
-  <img src="./assets/work-news-dark.svg" alt="AI NewsReel Generator: automated AI-driven news reel generation. Open repository." width="100%" />
-</picture>
-</a>
+<a href="https://github.com/PasupuletiC?tab=repositories"><img src="./assets/profile/work-head.svg" alt="Selected work. View all repositories." width="100%" /></a>
+<br/>
+<a href="https://github.com/PasupuletiC/AI-Operations-Center"><img src="./assets/profile/work-1.svg" alt="AI Operations Center: support email triage and incident analysis, knowledge retrieval with multi-provider model routing. LangGraph, FastAPI, Next.js, Qdrant." width="100%" /></a>
+<br/>
+<a href="https://github.com/PasupuletiC/rag-voice-assistant"><img src="./assets/profile/work-2.svg" alt="Ruby voice assistant: voice conversations grounded in your documents, persistent memory, retrieval, OCR and multilingual voice. Python, Flask, Groq, FAISS." width="100%" /></a>
+<br/>
+<a href="https://github.com/PasupuletiC/AI_Surveillance_Monitoring_System"><img src="./assets/profile/work-3.svg" alt="AI Surveillance: YOLOv8 detection and retrieval-augmented incident reports. YOLOv8, OpenCV, RAG." width="100%" /></a>
+<br/>
+<a href="https://github.com/PasupuletiC/AI-NewsReel-Generator"><img src="./assets/profile/work-4.svg" alt="AI NewsReel Generator: automated AI-driven news reel generation. Gemini, FFmpeg, MoviePy." width="100%" /></a>
+
+</td>
+</tr>
+<tr>
+<td width="48%" valign="top">
+
+<img src="./assets/profile/experience.svg" alt="Experience and education. AI Developer Intern at Brollysolutions, 2025. B.Tech in Computer Science and Engineering, Kalasalingam Academy of Research and Education (KARE), 2026. Research author, IEEE INDICON 2025, energy prediction using Random Forest models." width="100%" />
+
+</td>
+<td width="52%" valign="top">
+
+<img src="./assets/profile/highlights.svg" alt="Key highlights. Internship at NITK Surathkal. IIT Madras Shaastra Hackathon top 50 team. Kalasalingam ACM Hackathon finalist. Pathway GenAI Hackathon, IIT Hyderabad, top 10 team. Geospatial LULC classification and change detection project." width="100%" />
+
+</td>
+</tr>
+</table>
 
 **More projects:** [DataFlow Automator](https://github.com/PasupuletiC/dataflow-automator) (automated data cleaning, quality analysis and reporting) · [AI Interview Platform](https://github.com/PasupuletiC/AI-Interview-Platform) · [AI Candidate Screening](https://github.com/PasupuletiC/ai-candidate-screening-system) · [Live Transcription](https://github.com/PasupuletiC/Live-Transcription)
 
 <details>
-<summary><strong>Implementation notes</strong> — a closer look at the projects</summary>
+<summary><strong>Implementation notes</strong>: a closer look at the projects</summary>
 
 - **[AI Operations Center](https://github.com/PasupuletiC/AI-Operations-Center):** Processes incoming support emails, routes agent tasks, retrieves previous resolutions with Qdrant, and generates root-cause analysis. Supports Groq, Gemini, and local Ollama model routing, with a Next.js dashboard and FastAPI backend.
 - **[Ruby Voice Assistant](https://github.com/PasupuletiC/rag-voice-assistant):** Combines persistent memory, document retrieval, OCR, web search, and voice interaction. Includes English, Hindi, Tamil, and Telugu voice modes.
@@ -67,36 +60,6 @@ I build **AI applications that retrieve knowledge, coordinate agents, and interp
 - **[AI NewsReel Generator](https://github.com/PasupuletiC/AI-NewsReel-Generator):** Automates AI-driven news reel generation.
 
 </details>
-
-## Engineering stack
-
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/stack-dark-mobile.svg" />
-  <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="./assets/stack-light-mobile.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
-  <img src="./assets/stack-dark.svg" alt="Animated engineering stack: AI and retrieval, machine learning and vision, applications, and infrastructure. Text version below." width="100%" />
-</picture>
-
-<details>
-<summary>Engineering stack — text version</summary>
-
-| Area | Technologies |
-| :--- | :--- |
-| **AI & retrieval** | LangGraph · LangChain · Qdrant · FAISS · Groq · Gemini |
-| **Machine learning & vision** | Python · PyTorch · TensorFlow · YOLOv8 · OpenCV |
-| **Application development** | FastAPI · Flask · React · Next.js · PostgreSQL |
-| **Infrastructure & tools** | Docker · AWS · Google Cloud · Git · Linux |
-
-</details>
-
-**Current learning:** LLM evaluation, agent reliability, and production deployment.
-
-## Background
-
-- **Experience:** AI Developer Intern at **Brollysolutions**.
-- **Education:** B.Tech in Computer Science, **Kalasalingam Academy of Research and Education**, 2026.
-- **Research:** **IEEE INDICON 2025** author; energy prediction using Random Forest models.
 
 ## GitHub activity
 
@@ -111,8 +74,12 @@ I build **AI applications that retrieve knowledge, coordinate agents, and interp
   <img src="https://raw.githubusercontent.com/PasupuletiC/PasupuletiC/output/snake.svg" alt="Animated GitHub contribution history" width="100%" />
 </picture>
 
-## Connect
+<p align="center">
+  <img src="./assets/profile/connect.svg" alt="Connect. Open to entry-level AI/ML Engineer and AI Developer opportunities, and conversations about RAG, agents and computer vision." width="100%" />
+</p>
 
-Open to entry-level **AI/ML Engineer** and **AI Developer** opportunities, and conversations about RAG, agents, and computer vision.
-
-**[LinkedIn ↗](https://www.linkedin.com/in/pasupuleticharankumar1611)** &nbsp;·&nbsp; **[Email ↗](mailto:pasupuleticharankumar16@gmail.com)** &nbsp;·&nbsp; **[All repositories ↗](https://github.com/PasupuletiC?tab=repositories)**
+<p align="center">
+  <a href="https://www.linkedin.com/in/pasupuleticharankumar1611"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:pasupuleticharankumar16@gmail.com"><img src="https://img.shields.io/badge/Email-Send%20a%20message-1f9a73?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/PasupuletiC?tab=repositories"><img src="https://img.shields.io/badge/All%20repositories-12263f?style=for-the-badge&logo=github&logoColor=white" alt="All repositories" /></a>
+</p>
