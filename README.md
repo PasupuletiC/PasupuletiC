@@ -56,6 +56,8 @@ I build **AI applications that retrieve knowledge, coordinate agents, and interp
 </picture>
 </a>
 
+**More projects:** [DataFlow Automator](https://github.com/PasupuletiC/dataflow-automator) (automated data cleaning, quality analysis and reporting) · [AI Interview Platform](https://github.com/PasupuletiC/AI-Interview-Platform) · [AI Candidate Screening](https://github.com/PasupuletiC/ai-candidate-screening-system) · [Live Transcription](https://github.com/PasupuletiC/Live-Transcription)
+
 <details>
 <summary><strong>Implementation notes</strong> — a closer look at the projects</summary>
 
