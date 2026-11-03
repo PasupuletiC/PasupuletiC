@@ -45,8 +45,8 @@ $svg += "<text x='34' y='301' fill='#526075' font-size='13'>Updated $updated UTC
 $palettes = @{
     dark = @{
         '#ffffff' = '#0b1425'; '#dce3ed' = '#2b405b'; '#0f172a' = '#f1f5fb'
-        '#475569' = '#a1b1c6'; '#526075' = '#a1b1c6'; '#12263f' = '#f5b84b'
-        '#0f766e' = '#65d6b0'; '#3b82c4' = '#ff8fa3'; '#9a580b' = '#e8b35a'
+        '#475569' = '#a1b1c6'; '#526075' = '#a1b1c6'; '#12263f' = '#34d399'
+        '#0f766e' = '#65d6b0'; '#3b82c4' = '#60a5fa'; '#9a580b' = '#e8b35a'
     }
     light = @{
         '#ffffff' = '#f8fbff'; '#dce3ed' = '#c4d2e3'; '#0f172a' = '#14243c'
