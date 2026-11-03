@@ -31,6 +31,14 @@ def fade(body, delay=0.0, dy=12):
             f'{body}</g>')
 
 
+def wipe(body, uid, x, y, w, h, delay, dur=1.2):
+    """Left-to-right reveal (typewriter feel)."""
+    T = delay + dur
+    k = f'0;{delay / T:.3f};1'
+    return (f'<clipPath id="{uid}"><rect x="{x}" y="{y}" width="{w}" height="{h}"><animate attributeName="width" values="0;0;{w}" '
+            f'keyTimes="{k}" dur="{T:.2f}s" fill="freeze"/></rect></clipPath><g clip-path="url(#{uid})">{body}</g>')
+
+
 def pop(body, cx, cy, delay=0.0):
     """Scale-in around (cx, cy)."""
     T = delay + 0.6
@@ -107,10 +115,26 @@ sparks = ''.join(
     f'<circle cx="{x}" cy="{y}" r="{r}" fill="{TEAL}"><animate attributeName="opacity" values="0;.9;0" dur="{d}s" begin="{b}s" {INF}/>'
     f'<animate attributeName="r" values="0;{r};0" dur="{d}s" begin="{b}s" {INF}/></circle>'
     for x, y, r, d, b in [(40, 70, 3.5, 3.2, 0), (205, 62, 3, 4, 1), (214, 214, 3.5, 3.6, .5), (30, 224, 2.5, 4.4, 2), (120, 44, 2.5, 3.8, 1.4)])
+floaters = ''.join(
+    f'<text x="{x}" y="330" font-size="{s}" font-weight="700" fill="{TEAL}" opacity="0" font-family="Consolas, monospace">{esc(g)}'
+    f'<animateTransform attributeName="transform" type="translate" values="0 0;0 -320" dur="{d}s" begin="{b}s" {INF}/>'
+    f'<animate attributeName="opacity" values="0;.22;.22;0" keyTimes="0;.15;.8;1" dur="{d}s" begin="{b}s" {INF}/></text>'
+    for x, g, s, d, b in [(270, '{ }', 18, 11, 0), (330, '01', 16, 14, 3), (395, 'RAG', 15, 12, 6), (470, '</>', 18, 15, 1), (540, 'AI', 17, 10, 4), (610, '{ }', 15, 13, 8), (300, 'LLM', 14, 16, 9)])
+phrases = ['I build RAG pipelines that actually ship', 'Agentic AI with LangChain and LangGraph', 'Computer vision with YOLOv8 and OpenCV', 'IEEE INDICON 2025 author, open to AI/ML roles']
+term = ''
+for i, ph in enumerate(phrases):
+    W = 440
+    term += (f'<clipPath id="tw{i}"><rect x="262" y="290" width="0" height="26"><animate attributeName="width" values="0;{W};{W};0;0" keyTimes="0;.1;.23;.24;1" dur="14s" begin="{2.4 + i * 3.5}s" {INF}/></rect></clipPath>'
+             f'<g clip-path="url(#tw{i})" opacity="0"><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.001;.24;.2401;1" dur="14s" begin="{2.4 + i * 3.5}s" {INF}/>'
+             f'<text x="262" y="308" font-size="14" font-weight="600" fill="{INK}" font-family="Consolas, monospace">{esc(ph)}</text></g>')
+term = (f'<rect x="238" y="288" width="470" height="30" rx="8" fill="#f6fbf9" stroke="#d4ece1"/>'
+        f'<text x="248" y="308" font-size="14" font-weight="700" fill="{TEAL}" font-family="Consolas, monospace">$</text>' + term +
+        f'<rect x="262" y="293" width="7" height="18" fill="{TEAL}" opacity=".85"><animate attributeName="opacity" values="1;0;1" dur="1s" {INF}/>'
+        f'<animate attributeName="x" values="262;702;702;262;262" keyTimes="0;.1;.23;.24;1" dur="14s" begin="2.4s" {INF}/></rect>')
 hero = f'''
 <defs><clipPath id="av"><circle cx="118" cy="150" r="82"/></clipPath>
 <clipPath id="badge"><rect x="238" y="130" width="176" height="32" rx="8"/></clipPath></defs>
-<rect x=".75" y=".75" width="858.5" height="298.5" rx="16" fill="#fff" stroke="{BORDER}" stroke-width="1.5"/>
+<rect x=".75" y=".75" width="858.5" height="330.5" rx="16" fill="#fff" stroke="{BORDER}" stroke-width="1.5"/>
 <circle cx="118" cy="150" r="96" fill="none" stroke="{TEAL}" stroke-opacity=".4" stroke-width="2" stroke-dasharray="10 14">
  <animateTransform attributeName="transform" type="rotate" from="0 118 150" to="360 118 150" dur="30s" {INF}/></circle>
 <circle cx="118" cy="150" r="88" fill="#fff" stroke="{TEAL}" stroke-width="4">
@@ -119,14 +143,17 @@ hero = f'''
 <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="5s" {INF}/>
 <image href="data:image/jpeg;base64,{AV}" x="36" y="68" width="164" height="164" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice"/></g>
 {sparks}
+{floaters}
 {fade(text(238, 70, "Hi, I'm", 21, INK, 500), 0.2)}
 {fade(text(236, 116, "Charan Kumar Pasupuleti", 33, INK, 800), 0.4)}
 {fade(f'<rect x="238" y="130" width="176" height="32" rx="8" fill="{TEAL}"/>' + text(326, 152, "AI/ML Engineer", 16, '#fff', 700, 'middle') +
       f'<g clip-path="url(#badge)"><rect x="150" y="125" width="34" height="44" fill="#fff" opacity=".28" transform="skewX(-20)"><animate attributeName="x" values="150;470" dur="3.6s" begin="1.2s" {INF}/></rect></g>', 0.6)}
 {fade(text(238, 192, "Generative AI   |   RAG   |   Agentic AI   |   Machine Learning", 15, INK, 600), 0.8)}
-{fade(lines(238, 220, ["I build AI applications that retrieve knowledge, coordinate agents,", "and interpret visual data. My focus is practical, reliable model", "behavior, affordable infrastructure, and clear user experiences."], 14, MUTED, 21), 1.0)}
-<rect x="640" y="252" width="8" height="15" rx="1" fill="{TEAL}" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.5;.5001" dur="1.1s" begin="1.8s" {INF}/></rect>
-<g transform="translate(770 150) scale(.82)">
+{''.join(wipe(text(238, 220 + i * 21, r, 14, MUTED), f'bw{i}', 236, 205 + i * 21, 470, 20, 1.0 + i * 0.7, 1.4) for i, r in enumerate(["I build AI applications that retrieve knowledge, coordinate agents,", "and interpret visual data. My focus is practical, reliable model", "behavior, affordable infrastructure, and clear user experiences."]))}
+{term}
+<g transform="translate(770 160) scale(.82)">
+ <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="11s" {INF}/><circle cx="116" r="5" fill="{TEAL}"/></g>
+ <g><animateTransform attributeName="transform" type="rotate" from="180" to="-180" dur="17s" {INF}/><circle cx="-100" r="4" fill="#3b82c4"/></g>
  <circle r="105" fill="none" stroke="#cfeadd" stroke-width="2" stroke-dasharray="4 10"><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="26s" {INF}/></circle>
  <circle r="100" fill="#f4fbf8"><animate attributeName="r" values="98;108;98" dur="6s" {INF}/></circle>
  <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="5s" {INF}/>
@@ -145,7 +172,7 @@ hero = f'''
   <rect x="74" y="-10" width="40" height="40" rx="11" fill="#fff" stroke="#bfe5d3"/>
   <path d="M84 20v-9M94 20v-16M104 20v-23" stroke="{TEAL}" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-opacity" values="1;.4;1" dur="2.6s" {INF}/></path></g>
 </g>'''
-write('hero.svg', f'<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300" role="img" aria-label="Charan Kumar Pasupuleti, AI/ML Engineer. Generative AI, RAG, agentic AI and machine learning."><title>Charan Kumar Pasupuleti: AI/ML Engineer</title><g font-family="{FONT}">{hero}</g></svg>')
+write('hero.svg', f'<svg xmlns="http://www.w3.org/2000/svg" width="860" height="332" viewBox="0 0 860 332" role="img" aria-label="Charan Kumar Pasupuleti, AI/ML Engineer. Generative AI, RAG, agentic AI and machine learning."><title>Charan Kumar Pasupuleti: AI/ML Engineer</title><g font-family="{FONT}">{hero}</g></svg>')
 
 # ================= STRIP =================
 cells = [(I_CAP, 'B.Tech (CSE)', 'KARE, Batch 2026'), (I_BRIEF, 'AI Developer Intern', 'Brollysolutions'),
@@ -160,6 +187,19 @@ for i, (ic, t1, t2) in enumerate(cells):
     bounce = f'<animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="3s" begin="{i*0.5}s" {INF}/>'
     b += fade(f'<g transform="translate({x+24} 48) scale(.9)"><g>{bounce}{ic}</g></g>' + text(x + 42, 44, t1, 12, INK, 700) + text(x + 42, 62, t2, 10.5, MUTED), 0.15 * i)
 svg('strip.svg', 860, 96, b, 'Education, role, research, focus and current learning', dur=8, begin=2)
+
+# ================= TICKER =================
+words = ['RAG', 'LangGraph', 'LangChain', 'Qdrant', 'FAISS', 'Groq', 'Gemini', 'YOLOv8', 'OpenCV', 'PyTorch', 'TensorFlow', 'FastAPI', 'Next.js', 'Docker', 'AWS', 'PostgreSQL', 'Agentic AI', 'Computer Vision']
+s_ = '   •   '.join(words) + '   •   '
+LW = 1560
+tick = (f'<defs><clipPath id="tk"><rect x="1" y="1" width="858" height="46" rx="15"/></clipPath>'
+        f'<linearGradient id="tf" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".07" stop-color="#fff" stop-opacity="0"/><stop offset=".93" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>'
+        f'<g clip-path="url(#tk)"><g><animateTransform attributeName="transform" type="translate" values="0 0;-{LW} 0" dur="42s" {INF}/>'
+        f'<text x="0" y="29" font-size="13.5" font-weight="700" fill="{INK}" textLength="{LW}" lengthAdjust="spacing" xml:space="preserve">{esc(s_)}</text>'
+        f'<text x="{LW}" y="29" font-size="13.5" font-weight="700" fill="{INK}" textLength="{LW}" lengthAdjust="spacing" xml:space="preserve">{esc(s_)}</text>'
+        f'<text x="{2*LW}" y="29" font-size="13.5" font-weight="700" fill="{INK}" textLength="{LW}" lengthAdjust="spacing" xml:space="preserve">{esc(s_)}</text></g>'
+        f'<rect x="1" y="1" width="858" height="46" fill="url(#tf)"/></g>')
+svg('ticker.svg', 860, 48, tick, 'Skills ticker: RAG, LangGraph, Qdrant, YOLOv8, FastAPI, Docker, AWS and more', sh=False)
 
 # ================= ABOUT =================
 about_rows = [["AI/ML Engineer with hands-on experience in LLMs, RAG,", "computer vision and agent systems."],
@@ -201,20 +241,38 @@ cards = [('work-1.svg', 'AI Operations Center', ['Support email triage and incid
          ('work-2.svg', 'Ruby: Voice Assistant', ['Voice conversations grounded in your', 'documents. Persistent memory, retrieval,', 'OCR and multilingual voice.'], ['Python', 'Flask', 'Groq', 'FAISS'], '#a8c9ee'),
          ('work-3.svg', 'AI Surveillance', ['Connect visual detections with relevant', 'context. YOLOv8 detection and retrieval-', 'augmented incident reports.'], ['YOLOv8', 'OpenCV', 'RAG'], '#c4b5ec'),
          ('work-4.svg', 'AI NewsReel Generator', ['Automated AI-driven news reel generation.', 'From topic extraction to scripted video', 'creation.'], ['Gemini', 'FFmpeg', 'MoviePy'], '#f0c79a')]
+def _flow(x1, y1, x2, y2, d):
+    return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{TEAL}" stroke-opacity=".6" stroke-width="1.4" stroke-dasharray="3 3">'
+            f'<animate attributeName="stroke-dashoffset" values="0;-12" dur="{d}s" {INF}/></line>')
+
+
+net = ''.join(_flow(383, 90, x, y, d) for x, y, d in [(356, 74, 1.1), (410, 74, 1.4), (356, 106, 1.7), (410, 106, 1.3)])
+net += ''.join(f'<circle cx="{x}" cy="{y}" r="3.6" fill="#fff" stroke="{TEAL}" stroke-width="1.6"><animate attributeName="r" values="3.6;4.6;3.6" dur="2.4s" begin="{b}s" {INF}/></circle>' for x, y, b in [(356, 74, 0), (410, 74, .6), (356, 106, 1.2), (410, 106, 1.8)])
+net += f'<circle cx="383" cy="90" r="6" fill="{TEAL}"><animate attributeName="r" values="6;8;6" dur="2s" {INF}/></circle>'
+wave = ''.join(f'<rect x="{352 + i * 9}" y="87" width="5" height="6" rx="2.5" fill="{TEAL}"><animate attributeName="height" values="6;{h};6" dur="{d}s" begin="{i*0.12:.2f}s" {INF}/>'
+               f'<animate attributeName="y" values="87;{90 - h / 2};87" dur="{d}s" begin="{i*0.12:.2f}s" {INF}/></rect>' for i, (h, d) in enumerate([(26, 1.1), (40, .9), (22, 1.3), (46, .8), (30, 1.2), (38, 1.0), (18, 1.4)]))
+det = (f'<path d="M354 76v-8h8M404 68h8v8M412 104v8h-8M362 112h-8v-8" stroke="{TEAL}" stroke-width="2" fill="none" stroke-linecap="round"/>'
+       f'<circle cx="383" cy="84" r="7" fill="none" stroke="#94a3b8" stroke-width="1.6"/><path d="M370 106q0-12 13-12t13 12" fill="none" stroke="#94a3b8" stroke-width="1.6"/>'
+       f'<line x1="356" y1="70" x2="410" y2="70" stroke="{TEAL}" stroke-width="2"><animate attributeName="y1" values="70;110;70" dur="3s" {INF}/><animate attributeName="y2" values="70;110;70" dur="3s" {INF}/></line>')
+reel = (f'<clipPath id="reelc"><rect x="366" y="66" width="34" height="46" rx="6"/></clipPath><rect x="366" y="66" width="34" height="46" rx="6" fill="#fff" stroke="#94a3b8" stroke-width="1.6"/>'
+        f'<g clip-path="url(#reelc)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 -16" dur="2s" {INF}/>'
+        + ''.join(f'<rect x="371" y="{70 + i * 16}" width="24" height="11" rx="2.5" fill="{TEAL}" opacity=".25"/>' for i in range(5)) + '</g></g>'
+        f'<circle cx="383" cy="89" r="8" fill="#fff" stroke="{TEAL}" stroke-width="1.6"/><path d="M381 85l7 4-7 4z" fill="{TEAL}"><animate attributeName="opacity" values="1;.4;1" dur="1.6s" {INF}/></path>')
+MINI = [net, wave, det, reel]
 for n, (fn, t, desc, chips, stroke) in enumerate(cards):
     bars = ''.join(
         f'<line x1="30" y1="{yy}" x2="{x2}" y2="{yy}" stroke="{TEAL}" stroke-width="3" stroke-linecap="round">'
         f'<animate attributeName="x2" values="{x2};{x2-9};{x2}" dur="{d}s" {INF}/></line>'
         for yy, x2, d in [(36, 50, 2.2), (42, 44, 1.7), (48, 48, 2.6)])
     b = (f'<rect x="20" y="22" width="40" height="40" rx="11" fill="#fff" stroke="{stroke}"/>' + bars)
-    b += text(72, 40, t, 15.5, INK, 700) + lines(72, 62, desc, 12.5, MUTED, 17)
+    b += text(72, 40, t, 15.5, INK, 700) + lines(72, 62, desc, 12.5, MUTED, 17) + MINI[n]
     x = 72
     for c in chips:
         w = 14 + len(c) * 6.6
         b += f'<rect x="{x:.0f}" y="116" width="{w:.0f}" height="24" rx="7" fill="#fff" stroke="{stroke}"/>' + text(f'{x + w / 2:.0f}', 132.5, c, 11.5, INK, 600, 'middle')
         x += w + 6
     b += (f'<g><animateTransform attributeName="transform" type="translate" values="0 0;5 0;0 0" dur="1.8s" begin="{n*0.3}s" {INF}/>'
-          f'<path d="M398 36h14m0 0l-4-4m4 4l-4 4" stroke="{INK}" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>')
+          f'<path d="M400 36h12m0 0l-4-4m4 4l-4 4" stroke="{INK}" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>')
     svg(fn, 440, 156, b, t, stroke=stroke, delay=0.2 + n * 0.25, dur=6 + n * 0.7, begin=1 + n * 0.8)
 
 # ================= EXPERIENCE =================

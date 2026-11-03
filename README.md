@@ -12,6 +12,10 @@
   <img src="./assets/profile/strip.svg" alt="B.Tech CSE, KARE, batch 2026. AI Developer Intern at Brollysolutions. IEEE INDICON 2025 research author. Focus: RAG, agents, computer vision. Currently learning LLM evaluation and production." width="100%" />
 </p>
 
+<p align="center">
+  <img src="./assets/profile/ticker.svg" alt="Skills ticker: RAG, LangGraph, LangChain, Qdrant, FAISS, Groq, Gemini, YOLOv8, OpenCV, PyTorch, TensorFlow, FastAPI, Next.js, Docker, AWS, PostgreSQL" width="100%" />
+</p>
+
 <table width="100%">
 <tr>
 <td width="48%" valign="top">
